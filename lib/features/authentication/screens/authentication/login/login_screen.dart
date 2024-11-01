@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:t_store/common/widgets/app_divider.dart';
-import 'package:t_store/features/authentication/login/widgets/login_form.dart';
-import 'package:t_store/features/authentication/login/widgets/login_heading.dart';
+import 'package:t_store/features/authentication/screens/authentication/login/widgets/login_form.dart';
+import 'package:t_store/features/authentication/screens/authentication/login/widgets/login_heading.dart';
 import 'package:t_store/common/widgets/app_soclial.dart';
 import 'package:t_store/utils/constants/sizes.dart';
 import 'package:t_store/utils/constants/text_strings.dart';

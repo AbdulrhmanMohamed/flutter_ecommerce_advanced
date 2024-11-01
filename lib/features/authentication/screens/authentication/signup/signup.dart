@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:t_store/common/widgets/app_divider.dart';
 import 'package:t_store/common/widgets/app_soclial.dart';
-import 'package:t_store/features/authentication/signup/widgets/signup_form.dart';
+import 'package:t_store/features/authentication/screens/authentication/signup/widgets/signup_form.dart';
 import 'package:t_store/utils/constants/colors.dart';
 import 'package:t_store/utils/constants/sizes.dart';
 import 'package:t_store/utils/constants/text_strings.dart';
@@ -35,7 +35,7 @@ class Signup extends StatelessWidget {
             // DIVIDER
            const AppDivider(dividerString: TTexts.orSignUpWith,),
             const SizedBox(height: TSizes.spaceBtwItems,),
-            
+
             // SOCIAL LINKS
             const AppSoclial()
           ],
