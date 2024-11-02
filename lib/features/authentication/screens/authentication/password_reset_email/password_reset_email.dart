@@ -1,15 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:iconsax/iconsax.dart';
+import 'package:t_store/features/authentication/screens/authentication/success/success_screen.dart';
 import 'package:t_store/utils/constants/image_strings.dart';
 import 'package:t_store/utils/constants/sizes.dart';
 import 'package:t_store/utils/constants/text_strings.dart';
 
-class VerifyEmailScreen extends StatelessWidget {
-  const VerifyEmailScreen({super.key});
+class PasswordResetEmail extends StatelessWidget {
+  const PasswordResetEmail({super.key});
 
   @override
   Widget build(BuildContext context) {
     return SafeArea(
         child: Scaffold(
+        appBar: AppBar(automaticallyImplyLeading: false,actions: [IconButton(icon:const Icon(Icons.close),onPressed: (){Get.back();},)],),
       body: SingleChildScrollView(
         padding: const EdgeInsets.symmetric(
             vertical: TSizes.defaultSpace, horizontal: TSizes.md),
@@ -24,7 +28,7 @@ class VerifyEmailScreen extends StatelessWidget {
             const SizedBox(height: TSizes.spaceBtwItems),
             /// Confirm Email
             Text(
-              TTexts.confirmEmail,
+              TTexts.changeYourPasswordTitle,
               style: Theme.of(context).textTheme.headlineSmall,
               textAlign: TextAlign.center,
             ),
@@ -40,7 +44,7 @@ class VerifyEmailScreen extends StatelessWidget {
 
             /// Confirm Email Subtitle
             Text(
-              TTexts.confirmEmailSubTitle,
+              TTexts.changeYourPasswordSubTitle,
               style: Theme.of(context).textTheme.labelMedium!,
               textAlign: TextAlign.center,
             ),
@@ -50,7 +54,8 @@ class VerifyEmailScreen extends StatelessWidget {
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
-                  onPressed: () {}, child: const Text(TTexts.tContinue)),
+                  onPressed: () {Get.to(SuccessScreen());}, child: const Text(TTexts.done
+                  )),
             ),
           ],
         ),

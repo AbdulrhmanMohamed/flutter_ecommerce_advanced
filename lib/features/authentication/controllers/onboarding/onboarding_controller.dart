@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:t_store/features/authentication/login/login_screen.dart';
+import 'package:t_store/features/authentication/screens/authentication/login/login_screen.dart';
 import 'package:t_store/features/home/home_screen.dart';
 
 class OnboardingController extends GetxController {
